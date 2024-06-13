@@ -1,0 +1,660 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background:linear-gradient(to left ,rgb(254, 249, 146),rgb(255, 192, 240));
+}
+.nav-bar nav{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.nav-bar nav .nav-img img{
+    width: 180px;
+    position: relative;
+    right: 100px;
+    top: 10px;
+}
+.nav-bar nav .nav-name ul li{
+    display: inline-block;
+    margin-right: 25px;
+}
+.nav-bar nav .nav-name ul li a{
+    text-decoration: none;
+    color: rgb(28, 24, 24);
+    text-shadow: 3px 0 5px rgb(214, 73, 73);
+    font-size: 20px;
+    transition: .3s;
+}
+.nav-bar nav .nav-name ul li a:hover{
+    color: rgb(255, 6, 6);
+    text-shadow: 5px 0 9px rgb(185, 239, 247);
+    font-size: 23px;
+}
+
+.nav-bar nav .nav-login a{
+    text-decoration: none;
+    font-size: 20px;
+    text-shadow: 3px 0 5px rgb(241, 174, 174);
+    color: black;
+    transition: .3s;
+}
+.nav-bar nav .nav-login a:hover{
+    color:  rgb(255, 6, 6);;
+    text-shadow: 5px 0 9px rgb(24, 240, 247);
+    font-size: 23px;
+}
+
+
+
+
+.box {
+    margin: 40px 80px 10px 80px ;
+    background-color: rgb(202, 96, 96);
+    border-radius: 20px;
+}
+.box .info {
+    display: flex;
+    justify-content: space-between;
+}
+.box .info .contant{
+    background-color: rgb(173, 251, 251);
+    width: 65%;
+    border-radius: 10px;
+}
+
+
+
+.box .info .contant .btn1  button{
+    background-color: white;
+    margin: 30px 0 0 20px;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 0 0 10px  black;
+}
+.box .info .contant .btn1  button:hover {
+    box-shadow:0 0 10px white;
+    background-color: red;
+}
+.box .info .contant .btn1  button a{
+    color: black;
+    text-decoration: none;
+}
+.box .info .contant .btn1  button:hover a{
+    color: white;
+}
+.box .info .contant .btn1  button a i{
+    color: yellowgreen;
+}
+.box .info .contant .btn1  button:hover i{
+    color: purple;
+}
+
+
+
+.box .info .contant .name h1{
+    margin: 20px 0 0 30px;
+    font-size: 70px;
+}
+.box .info .contant .name h1 span{
+    color: purple;
+    font-family: mv boli;
+}
+.box .info .contant .name h2{
+    margin: 0 0 20px 30px;
+    font-size: 30px;
+}
+.box .info .contant .name p{
+    margin: 0 0 15px 30px;
+    font-size: 25px;
+} 
+
+
+
+.box .info .contant .name .btn2 button{
+    background-color: rgb(218, 238, 243);
+    margin: 10px 0 0 30px;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 0 0 10px  black;
+}
+.box .info .contant .name .btn2 button a{
+    text-decoration: none;
+    color: black;
+}
+.box .info .contant .name .btn2 button:hover{
+    box-shadow: 0 0 10px white;
+}
+
+
+
+.box .info .contant .name .btn3 .img img{
+    width: 40px;
+    border-radius: 20px;
+}
+.box .info .contant .name .btn3 .img {
+    position: absolute;
+    margin: 70px 0 0 30px;
+    display: flex;
+    box-shadow: 0 0 20px rgb(0, 199, 239);
+    border-radius: 20px;
+}
+.box .info .contant .name .btn3 .img p{
+    position: relative;
+    right: 20px;
+    top: 7px;
+}
+.box .info .contant .name .btn3:hover{
+    cursor: pointer;
+}
+
+
+
+.box .info .contant .name .btn3 .btn4{
+    text-align: center;
+}
+.box .info .contant .name .btn3 .btn4 button{
+    margin: 70px 0 50px 0;
+    padding: 10px;
+    border-radius: 7px;
+    background-color: black;
+    width: 150px;
+}
+.box .info .contant .name .btn3 .btn4 button a{
+    color: white;
+    text-decoration: none;
+    
+}
+.box .info .contant .name .btn3 .btn4 button a i{
+    transition: .3s;
+}
+.box .info .contant .name .btn3 .btn4 button:hover i{
+    transform: translateX(7px);
+}
+.box .info .contant .name .btn3 .btn4 button:hover{
+    background-color: white;
+}
+.box .info .contant .name .btn3 .btn4 button:hover a{
+    color: black;
+} 
+
+
+
+.box .info .img1 img{
+    width: 400px;
+    margin: 55px 50px;
+    animation: rotate 20s infinite;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+.box2{
+    width: 100%;
+    display: flex;
+    margin: 100px 0 0 0;
+    justify-content: center;
+}
+.box2 .brand-list{
+    width: 100%;
+    position: relative;
+}
+.box2 .brand-list .brand-card{
+    margin: 10px 20px 0 30px;
+    display: flex;
+    animation-name: card;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+@keyframes card{
+    0%{transform: translateX(-100%);}
+}
+.box2 .brand-list h1{
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+}
+.box2 .brand-list h1 span{
+    font-size: 60px;
+    color: purple;
+    font-family: mv boli;
+}
+.box2 .brand-list .card{
+    margin: 70px 20px 0  0;
+    width: 200px;
+    height: 200px;
+    display: block;
+    padding: 10px;
+    border: 2px solid black;
+    background:linear-gradient(to right ,white,#fc97f2);
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+}
+.box2 .brand-list .card:hover{
+    box-shadow: 0 10px 10px 0 white;
+}
+.box2 .brand-list .brand-card .card img{
+    width: 100px;
+    height: auto;
+    position: absolute;
+    bottom: 180px;
+    left: 55px;
+    box-shadow: 0 20px 20px black;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+}
+.box2 .brand-list .brand-card .card:hover img{
+    width: 105px;
+}
+.box2 .brand-list .card h2{
+    padding: 50px 0 10px;
+}
+.box2 .brand-list .brand-card .card p{
+    width: 200px;
+}
+.box2 .brand-list .brand-card .card  .icon a i{
+    font-size: 25px;
+    position: relative;
+    top: 20px;
+    float: right;
+    color: purple;
+}
+
+
+
+.trending{
+    width: 100%;
+    margin: 90px 0 0 0;
+}
+.trending h1{
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+.trending h1 span{
+    color: purple;
+    font-family:mv boli;
+    
+}
+.trending .box3{
+    width: 95%;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+.trending .box3 .trending-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+.trending .box3 .trending-img img{
+    width: 100%;
+}
+.trending .box3 .trending-img:hover img{
+    opacity: 0.2;
+}
+.trending .box3 .trending-img h3{
+    color: white;
+    font-size: 35px;
+    position: absolute;
+    margin-bottom: 120px;
+    opacity: 0;
+    font-family: mv boli;
+    
+}
+.trending .box3 .trending-img:hover h3{
+    opacity: 1;
+}
+.trending .box3 .trending-img p{
+    color: white;
+    position: absolute;
+    margin-top: 30px;
+    opacity: 0;
+    transition: 0.5s;
+ 
+}
+.trending .box3 .trending-img:hover p{
+    opacity: 1;
+}
+.trending .box3 .trending-img .trending-btn{
+    position: absolute;
+    margin-top: 180px;
+    background-color: aqua;
+    border-radius: 10px;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    transform: translateY(40px);
+    transition: 0.3s;
+    opacity: 0;
+}
+.trending .box3 .trending-img:hover .trending-btn{
+    transform: translateY(0);
+    opacity: 1;
+}
+.trending .box3 .trending-img .trending-btn:hover{
+    color: purple;
+    background-color: white;
+    border: 2px solid purple;
+}
+
+
+
+
+.order{
+    margin-top: 60px;
+}
+.order h1{
+    text-align: center;
+    font-size: 60px;
+}
+.order h1 span{
+    color: purple;
+    font-size: 65px;
+    font-family: mv boli;
+}
+.order .box4 .img img{
+    width: 650px;
+    animation: delivery 2s;
+    animation-timing-function: 1;
+}
+@keyframes delivery{
+    0%{transform: translateX(800px);}
+}
+.order .box4{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.order .box4 .order-info form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.order .box4 .order-info form .input input{
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid;
+    background-color: rgb(164, 253, 253);
+    padding: 0 10px;
+}
+.order .box4 .order-info form .order-btn a{
+    background-color: black;
+    color: white;
+    position: relative;
+    left: 560px;
+    top: 50px;
+    padding: 10px;
+    border-radius: 7px;
+    text-decoration: none;
+}
+.order .box4 .order-info form .order-btn a:hover{
+    background-color: aqua;
+    color: black;
+    border: 2px solid black;
+}
+.order .box4 .order-info form .order-btn a i{
+    transition: .3s;
+    padding: 0 10px 0 2px;
+}
+.order .box4 .order-info form .order-btn:hover i{
+    transform: translateX(7px);
+}
+
+
+
+
+.footer{
+    margin: 50px 0 0 0;
+    background-color: gray;
+    width: 100%;
+    height: 350px;
+}
+.footer footer{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.footer footer .logo img{
+    width: 300px;
+    position: relative;
+    right: -10px;
+    top: 40px;
+}
+.footer footer .logo p{
+    width: 300px;
+    color: rgb(78, 71, 71);
+    font-size: 19px;
+    position: relative;
+    left: 140px;
+    top: 20px;
+}
+.footer footer .footer-info{
+    margin-top: 40px;
+}
+.footer footer .footer-info .footer-head h1{
+    text-shadow: -1px -2px 2px yellow;
+}
+.footer footer .footer-info .footer-name a{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    color: rgb(255, 234, 234);
+    text-decoration: none;
+    font-size: 25px;
+}
+.footer footer .footer-info .footer-icon i{
+    font-size: 40px;
+    color: rgb(182, 236, 255);
+    margin: 20px 10px 10px 0;
+}
+.footer footer .footer-info .footer-icon i:hover{
+    color: aqua;
+}
+.footer footer .footer-info .footer-subs input{
+    height: 30px;
+    border-color: yellow;
+    border-radius: 5px;
+}
+.footer footer .footer-info .footer-subs button{
+    padding: 7px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+}
+.footer footer .footer-info .footer-box input{
+    width: 300px;
+    height: 75px;
+    border: 2px solid yellow;
+    border-radius: 5px;
+}
+
+@media screen and (max-width:750px) {
+    .nav-bar nav .nav-img img{
+        width: 100px;
+        position: relative;
+        margin-left: 60px;
+        margin-top: -30px;
+    }
+    .nav-bar nav .nav-name ul{
+        position: absolute;
+        margin-left: -180px;
+        margin-top: 5px;
+    }
+    .nav-bar nav .nav-name ul li{
+        margin-right: 10px;
+    }
+    .nav-bar nav .nav-name ul li a{
+        font-size: 13px;
+        }
+        .nav-bar nav .nav-login a{
+            font-size: 14px;
+            position: relative;
+            bottom: 15px;
+            margin-right: 4px;
+        }
+        .box{
+            width: 300px;
+            position: relative;
+            right: 30px;
+            background: none;
+            margin-top: -210px;
+        }
+        .box .info{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .box .info .img1 img{
+            width: 120px;
+            position: relative;
+            left: 130px;
+            top: 250px;
+        }
+        .box .info .contant{
+            width: 340px;
+            margin-left: -30px;
+        }
+        .box .info .contant .btn1 button{
+            margin-left: 220px;
+            margin-top: 20px;
+        }
+        .box .info .contant .name h1{
+            font-size: 40px;
+            width: 250px;
+            margin-bottom: 30px;
+            margin-top: 10px;
+        }
+        .box .info .contant .name h2{
+            font-size: 25px;
+        }
+        .box .info .contant .btn3 .img img{
+            display: none;
+        }
+        .box .info .contant .btn3 .img p{
+            display: none;
+        }
+        .box2 .brand-list h1{
+            font-size: 40px;
+        }
+        .box2 .brand-list .brand-card{
+            animation: none;
+            overflow: auto;
+        }
+        .box2 .brand-list .brand-card::-webkit-scrollbar{
+            display: none;
+        }
+        .trending h1{
+            font-size: 40px;
+        }
+        .trending .box3{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .trending .box3 .trending-img h3{
+            font-size: 20px;
+            position: absolute;
+            padding-top: 60px;
+        }
+        .trending .box3 .trending-img p{
+            display: none;
+        }
+        .trending .box3 .trending-img .trending-btn{
+            position: absolute;
+            width: 50px;
+            font-size: 10px;
+            margin-top: 39px; 
+        }
+
+        .order h1{
+            font-size: 40px;
+        }
+        .order .box4{
+            display: flex;
+            flex-direction: column;
+        }
+        .order .box4 .img img{
+            width: 250px;
+        }
+        .order .box4 .order-info form .input input{
+            width: 150px;
+        }
+        .order .box4 .order-info form .order-btn a{
+            position: relative;
+            left: 240px;
+            top: 20px;
+        }
+        .footer{
+            height: fit-content;
+        }
+        .footer footer{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+           
+        }
+        .footer footer .footer-info{
+            padding: 20px 0 20px 0;
+        }
+        .footer footer .logo img{
+            width: 120px;
+            position: relative;
+            right: -10px;
+            
+        }
+        .footer footer .logo p{
+            width: 150px;
+            color: rgb(78, 71, 71);
+            font-size: 19px;
+            position: relative;
+            left: 40px;
+            top: 50px;
+        }
+        .footer footer .footer-info .footer-head h1{
+            font-size: 25px;
+        }
+        .footer footer .footer-info .footer-name a{
+            margin-top: 10px;
+            font-size: 17px;
+        }
+        .footer footer .footer-info{
+            margin: 10px;
+        }
+        .footer footer .footer-info .footer-icon {
+            margin-left: 23px;
+        }
+        .footer footer .footer-info .footer-icon i{
+            font-size: 25px;
+            margin:10px 2px 10px 0;
+            
+        }
+        .footer footer .footer-info .footer-subs{
+            display: flex;
+            flex-direction: column;
+        }
+        .footer footer .footer-info .footer-subs input{
+            width: 150px;
+            margin-left: 20px;
+        }
+        .footer footer .footer-info .footer-subs button{
+            width: 153px;
+            margin-top: 5px;
+            margin-left: 20px;
+        }
+        .footer footer .footer-info .footer-box input {
+            width: 170px;
+            margin-bottom: -190px;
+        }
+    }

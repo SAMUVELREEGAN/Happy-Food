@@ -1,0 +1,340 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(247, 245, 143);
+}
+.nav1{
+    margin: 30px 50px 0 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.nav1 a i{
+    color: black;
+    font-size: 25px;
+}
+.nav1 a i:hover{
+    color: rgb(108, 178, 2);
+}
+.nav1 .search{
+    background-color: white;
+    padding: 3px;
+    width: 600px;
+    border: 2px black solid;
+    border-radius: 5px;
+    color: rgb(169, 163, 163);
+} 
+.nav1 .search:hover{
+    cursor: text;
+}
+.nav1 .search i{
+    margin: 3px;
+}
+.nav1 .fav i{
+    font-size: 25px;
+    margin: 0 7px;
+}
+.nav1 .fav i:hover{
+    color: red;
+    cursor: pointer;
+}
+.nav2 {
+    display: flex;
+    margin-top: 60px;
+    background-color: black;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav2 .head1 h1{
+    font-size: 20px;
+    margin-left: 40px;
+}
+.nav2 .head1 span{
+    font-size: 50px;
+}
+.nav2 .head1 i{
+    color: white;
+    font-size: 35px;
+    padding: 10px;
+}
+
+.nav2 .head2 h1 button{
+    background-color: rgb(243, 72, 72);
+    padding: 15px;
+    border-radius: 30px;
+    width: 200px;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+}
+.nav2 .head3 a{
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    font-size: 20px;
+}
+.nav2 .head3 a:hover{
+    color: yellow;
+    font-size: 23px;
+}
+#cake .side-bar{
+    height: 700%;
+    width: 250px;
+    background:rgb(248, 255, 125);
+    position: absolute;
+    margin: 20px 0 0 90px;
+    box-shadow: 0 0 10px rgb(0,0,0,0.2 ) ;
+    
+}
+#cake .side-bar h1{
+    color: red;
+    text-align: right;
+    padding: 10px;
+    padding-right: 20px;
+    position: sticky;
+    top: 2px;
+}
+#cake .side-bar ul li {
+    list-style: none;
+    text-align: right;
+    padding-right: 70px;
+    margin: 30px 0 0 0;
+    position: sticky;
+    top: 20px;    
+}
+#cake .side-bar ul{
+    position: sticky;
+    top: 60px;
+}
+#cake .side-bar ul li a{
+    text-decoration: none;
+    font-size: 25px;
+    color: black;  
+    overflow: hidden; 
+}
+#cake .side-bar ul li a:hover{
+    color: green;
+    font-size: 27px;
+
+}
+
+.head3 h1{
+    position: relative;
+    margin: 50px 0 0 400px;
+}
+
+.nav4{
+    padding: 40px 0 0 400px; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+   }
+   .nav4 .menu-card:hover{
+       box-shadow: 0 0 50px rgb(255, 255, 101);
+       cursor: pointer;
+   }
+   .nav4 .menu-card{
+       width: 300px;
+       height: 400px;
+       box-shadow: 0 0 10px;
+       background-color: rgb(255, 250, 147);
+       margin-top: 20px;
+       border: 2px black solid;
+       transition: .2s;
+   }
+   .nav4 .menu-card .menu-img{
+       width: 297px;
+       height: 200px;
+       overflow: hidden;
+       border: 1px black solid;
+   }
+   .nav4 .menu-card .menu-img img{
+       width: 300px;
+       height: 200px;
+       object-fit: cover;
+       transition: .4s;
+   }
+   .nav4 .menu-card:hover img{
+       transform: scale(1.1);
+   }
+   .nav4 .menu-card .menu-icon{
+    position: relative;
+    float: right;
+    top: -195px;
+    right: -7px;
+    color: white;
+    width: 20px;
+    height: 45px;
+    opacity: 0;
+    border-radius: 7px;
+    transition: .3s;
+   }
+   .nav4 .menu-card:hover .menu-icon{
+    position: relative;
+    top: -195px;
+    right: 10px;
+    opacity: 1;
+   }
+   .nav4 .menu-card .menu-icon i{
+    font-size: 20px;
+   }
+   .nav4 .menu-card .menu-icon i:hover{
+    color: red;
+    cursor: pointer;
+   }
+   .nav4 .menu-card .menu-info h2{
+    color: green;
+    text-align: center;
+    margin: 10px 0 10px 0;
+    font-size: 24px;
+   }
+   .nav4 .menu-card .menu-info p{
+    text-align: center;
+    margin-top: 8px;
+    line-height: 21px;
+   }
+   .nav4 .menu-card .menu-info h3{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 25px;
+   }
+   .nav4 .menu-card .menu-info .menu-star{
+    color: blue;
+    text-align: center;
+    margin: 10px 0 20px 0;
+   }
+   .nav4 .menu-card .menu-info .menu-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border: 2px black solid;
+    padding: 8px 10px;
+    margin: 10px 80px;
+   }
+   .nav4 .menu-card .menu-info .menu-btn:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+   }
+   @media screen and (max-width:750px){
+    .nav1 .search{
+        height: 30px;
+        margin: 0 10px 0 10px;
+    }
+    .nav1 .fav{
+        display: flex;
+    }
+    .nav1 .fav i{
+        font-size: 20px;
+
+    }
+    .nav2 .head1 h1{
+        font-size: 15px;
+        position: relative;
+        right: 30px;
+    }
+    .nav2 .head1 span{
+        font-size: 20px;
+    }
+    .nav4 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 40px 0 0 -390px;
+        gap: 2px; 
+    }
+    .nav4 .menu-card{
+        width: 175px;
+        height: 300px;
+       
+    }
+    .nav2 .head1 i{
+        font-size: 15px;
+        position: relative;
+        right: 9px;
+    }
+    .side-bar{
+        display: none;
+    }
+    .nav4 .menu-card .menu-img{
+        width: 172px;
+        height: 120px;
+    }
+    .nav4 .menu-card .menu-img img{
+        width: 172px;
+        height: 120px;
+    }
+    .head3 h1{
+        position: relative;
+        right: 400px;
+        margin-bottom: -70px;
+    }
+    .nav2 .head2 h1{
+        font-size: 15px;
+        margin: 5px 0 4px 0;
+    }
+    .nav2 .head2 h1 button{
+        width: 90px;
+        font-size: 9px;
+        border-radius: 20px;
+        height: 50px;
+    }
+    .nav2 .head3 a{
+        font-size: 15px;
+        margin: 10px 10px 90px 20px;
+    }
+    .nav4 .menu-card .menu-icon{
+        display: none;
+    }
+    .nav4 .menu-card .menu-info h2{
+        font-size: 20px;
+        margin-bottom: -5px;
+    }
+    .nav4 .menu-card .menu-info p{
+        width: 160px;
+        font-size: 15px;
+    }
+    .nav4 .menu-card .menu-info h3{
+        font-size: 18px;
+    }
+    .nav4 .menu-card .menu-info .menu-star{
+        position: relative;
+        margin-top: -1px;
+    }
+    .nav4 .menu-card .menu-star i{
+        font-size: 10px;
+    }
+    .nav4 .menu-card .menu-info .menu-btn{
+        position: relative;
+        width: 100px;
+        right: 40px;
+        margin-top: -9px;
+    }
+    #pizza .head2 h1{
+        position: relative;
+        margin-top: 70px;
+        margin-bottom: -70px;
+    }
+    #burger .head2 h1{
+        position: relative;
+        margin-top: 70px;
+        margin-bottom: -70px;
+    }
+    #sandwich .head2 h1{
+        position: relative;
+        margin-top: 70px;
+        margin-bottom: -70px;
+    }
+    #shawarma .head2 h1{
+        position: relative;
+        margin-top: 70px;
+        margin-bottom: -70px;
+    }
+   
+}

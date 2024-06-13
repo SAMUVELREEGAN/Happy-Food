@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(to left ,rgb(255, 243, 243),#ffe4f6);
+}
+.login{
+    height: fit-content;
+    width: fit-content;
+    box-shadow: 0 0 10px black;
+    border: 2px solid black;
+    margin: 130px 0 0 500px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.login .login-page{
+    display: flex;
+
+}
+.login .login-page .login-img{
+    background-color: rgb(169, 255, 255);
+    height: 400px;
+    width: 250px;
+    text-align: center;
+    border-right: 1px solid black;
+}
+.login .login-page .img img{
+    position: absolute;
+    top: 60px;
+    opacity: 0;
+    transition: .5s;
+    
+}
+.login .login-page:hover .img img{
+    transform: translateY(-40px);
+    opacity: 0.7;
+   
+}
+.login .login-page .login-img h1{
+    margin: 90px 0 20px 0;
+}
+.login .login-page .login-img p{
+    font-size: 20px;
+    margin: 40px 10px 20px 10px;
+}
+.login .login-page .login-img button{
+    width: 100px;
+    height: 35px;
+    margin-top: 60px;
+    border-radius: 5px;
+    background-color: aqua;
+}
+.login .login-page .login-img button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.login .login-page .login-info{
+    text-align: center;
+    background-color: white;
+}
+.login .login-page .login-info .head1 h1{
+    color: rgb(255, 149, 149);
+    margin: 30px;
+}
+.login .login-page .login-info .box1 i{
+    font-size: 30px;
+    padding: 0 10px 0 0;
+    text-shadow: 2px 0 0 rgb(136, 227, 255);
+}
+.login .login-page .login-info .box1 i:hover{
+    text-shadow: 2px 0 0 rgb(255, 136, 136);
+    cursor: pointer;
+}
+.login .login-page .login-info .head2 p{
+    color: rgb(157, 154, 154);
+    margin: 10px;
+}
+.login .login-page .login-info .box2{
+    margin: 20px;
+}
+.login .login-page .login-info .box2 .input{
+    margin: 10px; 
+}
+.login .login-page .login-info .box2 .input input{
+    width: 250px;
+    height: 30px;
+    padding-left: 20px;
+}
+.login .login-page .login-info .box2 .input i{
+    position: absolute;
+    margin: 8px 0 0 4px;
+}
+.login .login-page .login-info .btn button{
+    background-color: white;
+    border-radius: 8px;
+    border-color: white;
+    box-shadow: 3px 2px 0 rgb(196, 196, 196);
+}
+.login .login-page .login-info .btn button:hover{
+    box-shadow: 3px 2px 0 aqua;
+    cursor: pointer;
+    color: rgb(255, 178, 178);
+}
+.login .login-page .login-info .btn1{
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+.login .login-page .login-info .btn1 button{
+    width: 100px;
+    height: 35px;
+    color: aqua;
+    background-color: black;
+    border-radius: 7px;
+}
+.login .login-page .login-info .btn1 button:hover{
+    background-color: aqua;
+    color: black;
+    cursor: pointer;
+}
+
+
+
+
+
+@media screen and (max-width:750px){
+    .login{
+       position: relative;
+       margin: -30px 10px 0 10px;
+       border: none;
+       box-shadow: none;
+    }
+    .login .login-page{
+        display: flex;
+        flex-direction: column;
+    }
+    .login .login-page .img img{
+        display: none;
+    }
+    .login .login-page .login-img{
+        height: 150px;
+    }
+    .login .login-page .login-img h1{
+        display: none;
+    }
+    .login .login-page .login-img p{
+        display: none;
+    }
+    .login .login-page .login-img{
+        background: none;
+        border-right: none;
+    }
+    .login .login-page .login-img button{
+        content: "sam";
+       position: absolute;
+       top: 20px;
+       left: 260px;
+       background: none;
+       border: none;
+       font-size: 18px;
+       font-weight: bold;
+       color: rgb(74, 73, 73);
+       text-shadow: 2px 1px 0 aqua;
+    }
+    .login .login-page .login-img button:hover{
+        background: none;
+        color: rgb(255, 0, 0);
+
+    }
+}
